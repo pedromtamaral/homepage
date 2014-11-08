@@ -3,6 +3,12 @@ body {
   height: 100%;
 }
 
+h3 {
+  @media #{$small-only} {
+    font-size: 1.34rem
+  }
+}
+
 .profile-photo {
   border-radius: 50%;
   padding: 10px;
@@ -43,7 +49,7 @@ body {
         padding-bottom: 6px;
         
         &:before {
-          color: rgba(255, 0, 0, 0.6);
+          color: rgba(255, 255, 255, 0.4);
           padding-right: 2px;
           content: "•";
         }
@@ -63,6 +69,34 @@ body {
     ul {
       font-size: 1.2rem;
     }
+  }
+}
+
+.experience {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .position {
+    .duration {
+      color: rgb(178, 178, 178);
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    p.company-logo {
+      height: 80px;
+      img {
+        width: 160px;
+      }
+    }
+  }
+}
+
+hr {
+  &.experience-separator {
+    margin: 0 10%;
+    padding: 0;
   }
 }
 
